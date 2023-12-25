@@ -29,8 +29,10 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox_SEA = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxChange_SEA = new System.Windows.Forms.GroupBox();
             this.textBoxQuantity_SEA = new System.Windows.Forms.TextBox();
             this.textBoxNumber_SEA = new System.Windows.Forms.TextBox();
@@ -41,33 +43,64 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonBack_SEA = new System.Windows.Forms.Button();
             this.buttonClose_SEA = new System.Windows.Forms.Button();
             this.buttonShowFile_SEA = new System.Windows.Forms.Button();
+            this.dataGridViewBsket_SEA = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.groupBoxChange_SEA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBsket_SEA)).BeginInit();
             this.SuspendLayout();
-            // 
-            // richTextBox_SEA
-            // 
-            this.richTextBox_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox_SEA.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox_SEA.Name = "richTextBox_SEA";
-            this.richTextBox_SEA.Size = new System.Drawing.Size(1050, 573);
-            this.richTextBox_SEA.TabIndex = 0;
-            this.richTextBox_SEA.Text = "";
-            this.richTextBox_SEA.TextChanged += new System.EventHandler(this.richTextBox_SEA_TextChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.groupBoxChange_SEA);
             this.panel1.Controls.Add(this.buttonArrange_SEA);
             this.panel1.Controls.Add(this.buttonBack_SEA);
             this.panel1.Controls.Add(this.buttonClose_SEA);
             this.panel1.Controls.Add(this.buttonShowFile_SEA);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(791, 0);
+            this.panel1.Location = new System.Drawing.Point(484, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(259, 573);
+            this.panel1.Size = new System.Drawing.Size(259, 441);
             this.panel1.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(6, 145);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(249, 30);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Сортировать по ценне";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(6, 109);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(249, 30);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Сортировать по количеству";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(6, 73);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 30);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Сортировать по алфавиту";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBoxChange_SEA
             // 
@@ -78,7 +111,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBoxChange_SEA.Controls.Add(this.labelNumber_SEA);
             this.groupBoxChange_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxChange_SEA.ForeColor = System.Drawing.Color.White;
-            this.groupBoxChange_SEA.Location = new System.Drawing.Point(3, 189);
+            this.groupBoxChange_SEA.Location = new System.Drawing.Point(3, 294);
             this.groupBoxChange_SEA.Name = "groupBoxChange_SEA";
             this.groupBoxChange_SEA.Size = new System.Drawing.Size(252, 121);
             this.groupBoxChange_SEA.TabIndex = 7;
@@ -101,6 +134,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             // 
             // buttonChange_SEA
             // 
+            this.buttonChange_SEA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonChange_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonChange_SEA.ForeColor = System.Drawing.Color.Black;
             this.buttonChange_SEA.Location = new System.Drawing.Point(9, 88);
@@ -136,7 +170,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             // buttonArrange_SEA
             // 
             this.buttonArrange_SEA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonArrange_SEA.Location = new System.Drawing.Point(3, 112);
+            this.buttonArrange_SEA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonArrange_SEA.Location = new System.Drawing.Point(3, 217);
             this.buttonArrange_SEA.Name = "buttonArrange_SEA";
             this.buttonArrange_SEA.Size = new System.Drawing.Size(253, 59);
             this.buttonArrange_SEA.TabIndex = 6;
@@ -183,25 +218,36 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonShowFile_SEA.UseVisualStyleBackColor = false;
             this.buttonShowFile_SEA.Click += new System.EventHandler(this.buttonShowFile_SEA_Click_1);
             // 
+            // dataGridViewBsket_SEA
+            // 
+            this.dataGridViewBsket_SEA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBsket_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewBsket_SEA.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewBsket_SEA.Name = "dataGridViewBsket_SEA";
+            this.dataGridViewBsket_SEA.ReadOnly = true;
+            this.dataGridViewBsket_SEA.Size = new System.Drawing.Size(484, 441);
+            this.dataGridViewBsket_SEA.TabIndex = 2;
+            // 
             // FormBasket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 573);
+            this.ClientSize = new System.Drawing.Size(743, 441);
+            this.Controls.Add(this.dataGridViewBsket_SEA);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.richTextBox_SEA);
+            this.MinimumSize = new System.Drawing.Size(759, 480);
             this.Name = "FormBasket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBasket";
             this.panel1.ResumeLayout(false);
             this.groupBoxChange_SEA.ResumeLayout(false);
             this.groupBoxChange_SEA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBsket_SEA)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox_SEA;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonShowFile_SEA;
         private System.Windows.Forms.Button buttonBack_SEA;
@@ -213,5 +259,9 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         private System.Windows.Forms.Button buttonChange_SEA;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelNumber_SEA;
+        private System.Windows.Forms.DataGridView dataGridViewBsket_SEA;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

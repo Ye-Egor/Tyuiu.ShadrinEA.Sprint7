@@ -38,7 +38,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonClose_SEA = new System.Windows.Forms.Button();
             this.buttonBack_SEA = new System.Windows.Forms.Button();
             this.buttonBasket_SEA = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelPrice1_SEA = new System.Windows.Forms.Label();
             this.labelName1_SEA = new System.Windows.Forms.Label();
@@ -139,6 +138,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonMinus8_SEA = new System.Windows.Forms.Button();
             this.buttonMinus9_SEA = new System.Windows.Forms.Button();
             this.buttonMinus10_SEA = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelCap_SEA.SuspendLayout();
             this.tableLayoutPanelCap_SEA.SuspendLayout();
             this.flowLayoutPanelCatalog_SEA.SuspendLayout();
@@ -191,8 +191,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.tableLayoutPanelCap_SEA.ColumnCount = 2;
             this.tableLayoutPanelCap_SEA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanelCap_SEA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelCap_SEA.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanelCap_SEA.Controls.Add(this.groupBoxButton_SEA, 1, 0);
-            this.tableLayoutPanelCap_SEA.Controls.Add(this.textBox4, 0, 0);
             this.tableLayoutPanelCap_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelCap_SEA.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelCap_SEA.Name = "tableLayoutPanelCap_SEA";
@@ -289,22 +289,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonBasket_SEA.UseVisualStyleBackColor = false;
             this.buttonBasket_SEA.Click += new System.EventHandler(this.buttonBasket_SEA_Click);
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox4.Location = new System.Drawing.Point(7, 7);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(662, 75);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "Каталог ба-бла";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox2);
@@ -327,7 +311,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice1_SEA.Name = "labelPrice1_SEA";
             this.labelPrice1_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice1_SEA.TabIndex = 3;
-            this.labelPrice1_SEA.Text = "2 454";
+            this.labelPrice1_SEA.Text = "3 454";
             // 
             // labelName1_SEA
             // 
@@ -488,18 +472,18 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice2_SEA.Name = "labelPrice2_SEA";
             this.labelPrice2_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice2_SEA.TabIndex = 3;
-            this.labelPrice2_SEA.Text = "2 454";
+            this.labelPrice2_SEA.Text = "2 745";
             // 
             // labelName2_SEA
             // 
             this.labelName2_SEA.AutoSize = true;
             this.labelName2_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName2_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName2_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName2_SEA.Location = new System.Drawing.Point(9, 288);
             this.labelName2_SEA.Name = "labelName2_SEA";
-            this.labelName2_SEA.Size = new System.Drawing.Size(116, 20);
+            this.labelName2_SEA.Size = new System.Drawing.Size(296, 20);
             this.labelName2_SEA.TabIndex = 3;
-            this.labelName2_SEA.Text = "REDRAGON ";
+            this.labelName2_SEA.Text = "REDRAGON DITI ELITE K585 RGB";
             // 
             // pictureBox1
             // 
@@ -589,20 +573,20 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice3_SEA.ForeColor = System.Drawing.Color.White;
             this.labelPrice3_SEA.Location = new System.Drawing.Point(127, 308);
             this.labelPrice3_SEA.Name = "labelPrice3_SEA";
-            this.labelPrice3_SEA.Size = new System.Drawing.Size(74, 20);
+            this.labelPrice3_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice3_SEA.TabIndex = 3;
-            this.labelPrice3_SEA.Text = "2 45477";
+            this.labelPrice3_SEA.Text = "4 464";
             // 
             // labelName3_SEA
             // 
             this.labelName3_SEA.AutoSize = true;
             this.labelName3_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName3_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName3_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName3_SEA.Location = new System.Drawing.Point(107, 288);
             this.labelName3_SEA.Name = "labelName3_SEA";
-            this.labelName3_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName3_SEA.Size = new System.Drawing.Size(109, 20);
             this.labelName3_SEA.TabIndex = 3;
-            this.labelName3_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName3_SEA.Text = "Ajazz Ak820";
             // 
             // pictureBox3
             // 
@@ -694,18 +678,18 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice4_SEA.Name = "labelPrice4_SEA";
             this.labelPrice4_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice4_SEA.TabIndex = 3;
-            this.labelPrice4_SEA.Text = "2 454";
+            this.labelPrice4_SEA.Text = "4 248";
             // 
             // labelName4_SEA
             // 
             this.labelName4_SEA.AutoSize = true;
             this.labelName4_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName4_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName4_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName4_SEA.Location = new System.Drawing.Point(109, 279);
             this.labelName4_SEA.Name = "labelName4_SEA";
-            this.labelName4_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName4_SEA.Size = new System.Drawing.Size(92, 20);
             this.labelName4_SEA.TabIndex = 3;
-            this.labelName4_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName4_SEA.Text = "Aigo A108";
             // 
             // pictureBox4
             // 
@@ -797,18 +781,18 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice5_SEA.Name = "labelPrice5_SEA";
             this.labelPrice5_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice5_SEA.TabIndex = 3;
-            this.labelPrice5_SEA.Text = "2 454";
+            this.labelPrice5_SEA.Text = "5 892";
             // 
             // labelName5_SEA
             // 
             this.labelName5_SEA.AutoSize = true;
             this.labelName5_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName5_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName5_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName5_SEA.Location = new System.Drawing.Point(102, 279);
             this.labelName5_SEA.Name = "labelName5_SEA";
-            this.labelName5_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName5_SEA.Size = new System.Drawing.Size(110, 20);
             this.labelName5_SEA.TabIndex = 3;
-            this.labelName5_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName5_SEA.Text = "Vgn N75 Pro";
             // 
             // pictureBox5
             // 
@@ -900,18 +884,18 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice6_SEA.Name = "labelPrice6_SEA";
             this.labelPrice6_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice6_SEA.TabIndex = 3;
-            this.labelPrice6_SEA.Text = "2 454";
+            this.labelPrice6_SEA.Text = "4 481";
             // 
             // labelName6_SEA
             // 
             this.labelName6_SEA.AutoSize = true;
             this.labelName6_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName6_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName6_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName6_SEA.Location = new System.Drawing.Point(72, 279);
             this.labelName6_SEA.Name = "labelName6_SEA";
-            this.labelName6_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName6_SEA.Size = new System.Drawing.Size(170, 20);
             this.labelName6_SEA.TabIndex = 3;
-            this.labelName6_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName6_SEA.Text = "Photoshop Hotswap";
             // 
             // pictureBox6
             // 
@@ -1001,20 +985,20 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice7_SEA.ForeColor = System.Drawing.Color.White;
             this.labelPrice7_SEA.Location = new System.Drawing.Point(127, 308);
             this.labelPrice7_SEA.Name = "labelPrice7_SEA";
-            this.labelPrice7_SEA.Size = new System.Drawing.Size(54, 20);
+            this.labelPrice7_SEA.Size = new System.Drawing.Size(64, 20);
             this.labelPrice7_SEA.TabIndex = 3;
-            this.labelPrice7_SEA.Text = "2 454";
+            this.labelPrice7_SEA.Text = "10 670";
             // 
             // labelName7_SEA
             // 
             this.labelName7_SEA.AutoSize = true;
             this.labelName7_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName7_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName7_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName7_SEA.Location = new System.Drawing.Point(83, 279);
             this.labelName7_SEA.Name = "labelName7_SEA";
-            this.labelName7_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName7_SEA.Size = new System.Drawing.Size(146, 20);
             this.labelName7_SEA.TabIndex = 3;
-            this.labelName7_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName7_SEA.Text = " Machenike KT68";
             // 
             // pictureBox7
             // 
@@ -1106,18 +1090,18 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice8_SEA.Name = "labelPrice8_SEA";
             this.labelPrice8_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice8_SEA.TabIndex = 3;
-            this.labelPrice8_SEA.Text = "2 454";
+            this.labelPrice8_SEA.Text = "6 734";
             // 
             // labelName8_SEA
             // 
             this.labelName8_SEA.AutoSize = true;
             this.labelName8_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName8_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName8_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName8_SEA.Location = new System.Drawing.Point(72, 279);
             this.labelName8_SEA.Name = "labelName8_SEA";
-            this.labelName8_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName8_SEA.Size = new System.Drawing.Size(173, 20);
             this.labelName8_SEA.TabIndex = 3;
-            this.labelName8_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName8_SEA.Text = "RK100 Royal Kludge";
             // 
             // pictureBox8
             // 
@@ -1209,18 +1193,18 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice9_SEA.Name = "labelPrice9_SEA";
             this.labelPrice9_SEA.Size = new System.Drawing.Size(54, 20);
             this.labelPrice9_SEA.TabIndex = 3;
-            this.labelPrice9_SEA.Text = "2 454";
+            this.labelPrice9_SEA.Text = "1 344";
             // 
             // labelName9_SEA
             // 
             this.labelName9_SEA.AutoSize = true;
             this.labelName9_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName9_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName9_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName9_SEA.Location = new System.Drawing.Point(107, 279);
             this.labelName9_SEA.Name = "labelName9_SEA";
-            this.labelName9_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName9_SEA.Size = new System.Drawing.Size(116, 20);
             this.labelName9_SEA.TabIndex = 3;
-            this.labelName9_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName9_SEA.Text = "MUCAI MK61";
             // 
             // pictureBox9
             // 
@@ -1310,20 +1294,20 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelPrice10_SEA.ForeColor = System.Drawing.Color.White;
             this.labelPrice10_SEA.Location = new System.Drawing.Point(127, 308);
             this.labelPrice10_SEA.Name = "labelPrice10_SEA";
-            this.labelPrice10_SEA.Size = new System.Drawing.Size(54, 20);
+            this.labelPrice10_SEA.Size = new System.Drawing.Size(59, 20);
             this.labelPrice10_SEA.TabIndex = 3;
-            this.labelPrice10_SEA.Text = "2 454";
+            this.labelPrice10_SEA.Text = "8  472";
             // 
             // labelName10_SEA
             // 
             this.labelName10_SEA.AutoSize = true;
             this.labelName10_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName10_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelName10_SEA.Location = new System.Drawing.Point(29, 288);
+            this.labelName10_SEA.Location = new System.Drawing.Point(83, 279);
             this.labelName10_SEA.Name = "labelName10_SEA";
-            this.labelName10_SEA.Size = new System.Drawing.Size(239, 20);
+            this.labelName10_SEA.Size = new System.Drawing.Size(132, 20);
             this.labelName10_SEA.TabIndex = 3;
-            this.labelName10_SEA.Text = "REDRAGON Fizz K617 RGB";
+            this.labelName10_SEA.Text = "FEKER Alice80";
             // 
             // pictureBox10
             // 
@@ -1435,6 +1419,21 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonMinus10_SEA.UseVisualStyleBackColor = true;
             this.buttonMinus10_SEA.Click += new System.EventHandler(this.buttonMinus10_SEA_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(7, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(662, 75);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Каталог";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FormCatalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1444,10 +1443,10 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.Controls.Add(this.panelCap_SEA);
             this.MinimumSize = new System.Drawing.Size(696, 530);
             this.Name = "FormCatalog";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormCatalog";
             this.panelCap_SEA.ResumeLayout(false);
             this.tableLayoutPanelCap_SEA.ResumeLayout(false);
-            this.tableLayoutPanelCap_SEA.PerformLayout();
             this.flowLayoutPanelCatalog_SEA.ResumeLayout(false);
             this.groupBoxButton_SEA.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -1515,7 +1514,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonClose_SEA;
         private System.Windows.Forms.Button buttonBack_SEA;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panelButton1;
@@ -1616,6 +1614,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         private System.Windows.Forms.Button buttonMinus8_SEA;
         private System.Windows.Forms.Button buttonMinus9_SEA;
         private System.Windows.Forms.Button buttonMinus10_SEA;
+        private System.Windows.Forms.Button button1;
     }
 }
 

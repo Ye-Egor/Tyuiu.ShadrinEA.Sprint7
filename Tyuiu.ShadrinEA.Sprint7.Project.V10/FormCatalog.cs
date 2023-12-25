@@ -71,7 +71,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         private void buttonBasket_SEA_Click(object sender, EventArgs e)
         {
             // Определение пути к файлу CSV
-            string filePath = $@"C:\Users\meteo\source\repos\Tyuiu.ShadrinEA.Sprint7.Var10\Basket.csv";
+            string filePath = $@"{Directory.GetCurrentDirectory()}\Basket.csv";
 
             // Используйте try-catch для обработки исключений при записи в файл
             try
@@ -121,7 +121,9 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
         private void buttonBack_SEA_Click(object sender, EventArgs e)
         {
-
+            FormMain newForm = new FormMain();
+            newForm.Show();
+            this.Hide();
         }
 
 

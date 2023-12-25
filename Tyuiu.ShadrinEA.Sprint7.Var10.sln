@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.34031.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShadrinEA.Sprint7.Project.V10", "Tyuiu.ShadrinEA.Sprint7.Project.V10\Tyuiu.ShadrinEA.Sprint7.Project.V10.csproj", "{EAAA170F-E227-4443-8E6B-F1C6E6264EA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShadrinEA.Sprint7.Project.V10.Test", "Tyuiu.ShadrinEA.Sprint7.Project.V10.Test\Tyuiu.ShadrinEA.Sprint7.Project.V10.Test.csproj", "{BF8E3CEE-1992-4A29-91DB-D1ADB4D5BFC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib", "Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib\Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib.csproj", "{F21FC50F-8213-4963-848B-3AFC3EC04DB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EAAA170F-E227-4443-8E6B-F1C6E6264EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAAA170F-E227-4443-8E6B-F1C6E6264EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAAA170F-E227-4443-8E6B-F1C6E6264EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF8E3CEE-1992-4A29-91DB-D1ADB4D5BFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF8E3CEE-1992-4A29-91DB-D1ADB4D5BFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF8E3CEE-1992-4A29-91DB-D1ADB4D5BFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF8E3CEE-1992-4A29-91DB-D1ADB4D5BFC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21FC50F-8213-4963-848B-3AFC3EC04DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21FC50F-8213-4963-848B-3AFC3EC04DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21FC50F-8213-4963-848B-3AFC3EC04DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21FC50F-8213-4963-848B-3AFC3EC04DB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
