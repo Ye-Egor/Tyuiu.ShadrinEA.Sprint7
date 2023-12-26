@@ -32,24 +32,27 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCatalog));
             this.panelCap_SEA = new System.Windows.Forms.Panel();
             this.tableLayoutPanelCap_SEA = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanelCatalog_SEA = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxButton_SEA = new System.Windows.Forms.GroupBox();
+            this.buttonBasket_SEA = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonClose_SEA = new System.Windows.Forms.Button();
             this.buttonBack_SEA = new System.Windows.Forms.Button();
-            this.buttonBasket_SEA = new System.Windows.Forms.Button();
+            this.flowLayoutPanelCatalog_SEA = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panelButton1 = new System.Windows.Forms.Panel();
+            this.buttonMinus1_SEA = new System.Windows.Forms.Button();
+            this.labelKol1_SEA = new System.Windows.Forms.Label();
+            this.labelKol_SEA1 = new System.Windows.Forms.Label();
+            this.buttonAdd1_SEA = new System.Windows.Forms.Button();
             this.labelPrice1_SEA = new System.Windows.Forms.Label();
             this.labelName1_SEA = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelButton1 = new System.Windows.Forms.Panel();
-            this.buttonAdd1_SEA = new System.Windows.Forms.Button();
-            this.labelKol_SEA1 = new System.Windows.Forms.Label();
-            this.labelKol1_SEA = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonMinus2_SEA = new System.Windows.Forms.Button();
             this.labelKol2_SEA = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonAdd2_SEA = new System.Windows.Forms.Button();
@@ -59,6 +62,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonMinus3_SEA = new System.Windows.Forms.Button();
             this.labelKol3_SEA = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonAdd3_SEA = new System.Windows.Forms.Button();
@@ -68,6 +72,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.buttonMinus4_SEA = new System.Windows.Forms.Button();
             this.labelKol4_SEA = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonAdd4_SEA = new System.Windows.Forms.Button();
@@ -77,6 +82,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonMinus5_SEA = new System.Windows.Forms.Button();
             this.labelKol5_SEA = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.buttonAdd5_SEA = new System.Windows.Forms.Button();
@@ -86,6 +92,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.buttonMinus6_SEA = new System.Windows.Forms.Button();
             this.labelKol6_SEA = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.buttonAdd6_SEA = new System.Windows.Forms.Button();
@@ -95,6 +102,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.buttonMinus7_SEA = new System.Windows.Forms.Button();
             this.labelKol7_SEA = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.buttonAdd7_SEA = new System.Windows.Forms.Button();
@@ -104,6 +112,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.buttonMinus8_SEA = new System.Windows.Forms.Button();
             this.labelKol8_SEA = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.buttonAdd8_SEA = new System.Windows.Forms.Button();
@@ -113,6 +122,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.buttonMinus9_SEA = new System.Windows.Forms.Button();
             this.labelKol9_SEA = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.buttonAdd9_SEA = new System.Windows.Forms.Button();
@@ -122,31 +132,21 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.buttonMinus10_SEA = new System.Windows.Forms.Button();
             this.labelKol10_SEA = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.buttonAdd10_SEA = new System.Windows.Forms.Button();
             this.labelPrice10_SEA = new System.Windows.Forms.Label();
             this.labelName10_SEA = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.buttonMinus1_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus2_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus3_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus4_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus5_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus6_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus7_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus8_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus9_SEA = new System.Windows.Forms.Button();
-            this.buttonMinus10_SEA = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelCap_SEA.SuspendLayout();
             this.tableLayoutPanelCap_SEA.SuspendLayout();
-            this.flowLayoutPanelCatalog_SEA.SuspendLayout();
             this.groupBoxButton_SEA.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.flowLayoutPanelCatalog_SEA.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelButton1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -203,26 +203,20 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.tableLayoutPanelCap_SEA.Size = new System.Drawing.Size(1011, 89);
             this.tableLayoutPanelCap_SEA.TabIndex = 0;
             // 
-            // flowLayoutPanelCatalog_SEA
+            // button1
             // 
-            this.flowLayoutPanelCatalog_SEA.AutoScroll = true;
-            this.flowLayoutPanelCatalog_SEA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox2);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox1);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox3);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox4);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox5);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox6);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox7);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox8);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox9);
-            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox10);
-            this.flowLayoutPanelCatalog_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelCatalog_SEA.Location = new System.Drawing.Point(0, 89);
-            this.flowLayoutPanelCatalog_SEA.Name = "flowLayoutPanelCatalog_SEA";
-            this.flowLayoutPanelCatalog_SEA.Padding = new System.Windows.Forms.Padding(6);
-            this.flowLayoutPanelCatalog_SEA.Size = new System.Drawing.Size(1011, 524);
-            this.flowLayoutPanelCatalog_SEA.TabIndex = 1;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(7, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(662, 75);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Каталог";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBoxButton_SEA
             // 
@@ -235,6 +229,20 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBoxButton_SEA.Size = new System.Drawing.Size(329, 75);
             this.groupBoxButton_SEA.TabIndex = 0;
             this.groupBoxButton_SEA.TabStop = false;
+            // 
+            // buttonBasket_SEA
+            // 
+            this.buttonBasket_SEA.BackColor = System.Drawing.Color.PaleGreen;
+            this.buttonBasket_SEA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBasket_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonBasket_SEA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonBasket_SEA.Location = new System.Drawing.Point(3, 16);
+            this.buttonBasket_SEA.Name = "buttonBasket_SEA";
+            this.buttonBasket_SEA.Size = new System.Drawing.Size(223, 53);
+            this.buttonBasket_SEA.TabIndex = 3;
+            this.buttonBasket_SEA.Text = "Корзина";
+            this.buttonBasket_SEA.UseVisualStyleBackColor = false;
+            this.buttonBasket_SEA.Click += new System.EventHandler(this.buttonBasket_SEA_Click);
             // 
             // panel1
             // 
@@ -275,19 +283,26 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonBack_SEA.UseVisualStyleBackColor = false;
             this.buttonBack_SEA.Click += new System.EventHandler(this.buttonBack_SEA_Click);
             // 
-            // buttonBasket_SEA
+            // flowLayoutPanelCatalog_SEA
             // 
-            this.buttonBasket_SEA.BackColor = System.Drawing.Color.PaleGreen;
-            this.buttonBasket_SEA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBasket_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonBasket_SEA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBasket_SEA.Location = new System.Drawing.Point(3, 16);
-            this.buttonBasket_SEA.Name = "buttonBasket_SEA";
-            this.buttonBasket_SEA.Size = new System.Drawing.Size(223, 53);
-            this.buttonBasket_SEA.TabIndex = 3;
-            this.buttonBasket_SEA.Text = "Корзина";
-            this.buttonBasket_SEA.UseVisualStyleBackColor = false;
-            this.buttonBasket_SEA.Click += new System.EventHandler(this.buttonBasket_SEA_Click);
+            this.flowLayoutPanelCatalog_SEA.AutoScroll = true;
+            this.flowLayoutPanelCatalog_SEA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox2);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox1);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox3);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox4);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox5);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox6);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox7);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox8);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox9);
+            this.flowLayoutPanelCatalog_SEA.Controls.Add(this.groupBox10);
+            this.flowLayoutPanelCatalog_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelCatalog_SEA.Location = new System.Drawing.Point(0, 89);
+            this.flowLayoutPanelCatalog_SEA.Name = "flowLayoutPanelCatalog_SEA";
+            this.flowLayoutPanelCatalog_SEA.Padding = new System.Windows.Forms.Padding(6);
+            this.flowLayoutPanelCatalog_SEA.Size = new System.Drawing.Size(1011, 524);
+            this.flowLayoutPanelCatalog_SEA.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -301,6 +316,74 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox2.Size = new System.Drawing.Size(319, 504);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(3, 391);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(313, 110);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            // 
+            // panelButton1
+            // 
+            this.panelButton1.Controls.Add(this.buttonMinus1_SEA);
+            this.panelButton1.Controls.Add(this.labelKol1_SEA);
+            this.panelButton1.Controls.Add(this.labelKol_SEA1);
+            this.panelButton1.Controls.Add(this.buttonAdd1_SEA);
+            this.panelButton1.Location = new System.Drawing.Point(6, 331);
+            this.panelButton1.Name = "panelButton1";
+            this.panelButton1.Size = new System.Drawing.Size(307, 54);
+            this.panelButton1.TabIndex = 4;
+            // 
+            // buttonMinus1_SEA
+            // 
+            this.buttonMinus1_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus1_SEA.Name = "buttonMinus1_SEA";
+            this.buttonMinus1_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus1_SEA.TabIndex = 6;
+            this.buttonMinus1_SEA.Text = "-";
+            this.buttonMinus1_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus1_SEA.Click += new System.EventHandler(this.buttonMinus1_SEA_Click);
+            // 
+            // labelKol1_SEA
+            // 
+            this.labelKol1_SEA.AutoSize = true;
+            this.labelKol1_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelKol1_SEA.ForeColor = System.Drawing.Color.White;
+            this.labelKol1_SEA.Location = new System.Drawing.Point(133, 6);
+            this.labelKol1_SEA.Name = "labelKol1_SEA";
+            this.labelKol1_SEA.Size = new System.Drawing.Size(19, 20);
+            this.labelKol1_SEA.TabIndex = 5;
+            this.labelKol1_SEA.Text = "0";
+            // 
+            // labelKol_SEA1
+            // 
+            this.labelKol_SEA1.AutoSize = true;
+            this.labelKol_SEA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelKol_SEA1.ForeColor = System.Drawing.Color.White;
+            this.labelKol_SEA1.Location = new System.Drawing.Point(3, 5);
+            this.labelKol_SEA1.Name = "labelKol_SEA1";
+            this.labelKol_SEA1.Size = new System.Drawing.Size(124, 20);
+            this.labelKol_SEA1.TabIndex = 4;
+            this.labelKol_SEA1.Text = "колличество:";
+            // 
+            // buttonAdd1_SEA
+            // 
+            this.buttonAdd1_SEA.Location = new System.Drawing.Point(0, 29);
+            this.buttonAdd1_SEA.Name = "buttonAdd1_SEA";
+            this.buttonAdd1_SEA.Size = new System.Drawing.Size(272, 25);
+            this.buttonAdd1_SEA.TabIndex = 3;
+            this.buttonAdd1_SEA.Text = "Добавить";
+            this.buttonAdd1_SEA.UseVisualStyleBackColor = true;
+            this.buttonAdd1_SEA.Click += new System.EventHandler(this.buttonAdd1_SEA_Click);
             // 
             // labelPrice1_SEA
             // 
@@ -333,64 +416,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            // 
-            // panelButton1
-            // 
-            this.panelButton1.Controls.Add(this.buttonMinus1_SEA);
-            this.panelButton1.Controls.Add(this.labelKol1_SEA);
-            this.panelButton1.Controls.Add(this.labelKol_SEA1);
-            this.panelButton1.Controls.Add(this.buttonAdd1_SEA);
-            this.panelButton1.Location = new System.Drawing.Point(6, 331);
-            this.panelButton1.Name = "panelButton1";
-            this.panelButton1.Size = new System.Drawing.Size(307, 54);
-            this.panelButton1.TabIndex = 4;
-            // 
-            // buttonAdd1_SEA
-            // 
-            this.buttonAdd1_SEA.Location = new System.Drawing.Point(0, 29);
-            this.buttonAdd1_SEA.Name = "buttonAdd1_SEA";
-            this.buttonAdd1_SEA.Size = new System.Drawing.Size(272, 25);
-            this.buttonAdd1_SEA.TabIndex = 3;
-            this.buttonAdd1_SEA.Text = "Добавить";
-            this.buttonAdd1_SEA.UseVisualStyleBackColor = true;
-            this.buttonAdd1_SEA.Click += new System.EventHandler(this.buttonAdd1_SEA_Click);
-            // 
-            // labelKol_SEA1
-            // 
-            this.labelKol_SEA1.AutoSize = true;
-            this.labelKol_SEA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelKol_SEA1.ForeColor = System.Drawing.Color.White;
-            this.labelKol_SEA1.Location = new System.Drawing.Point(3, 5);
-            this.labelKol_SEA1.Name = "labelKol_SEA1";
-            this.labelKol_SEA1.Size = new System.Drawing.Size(124, 20);
-            this.labelKol_SEA1.TabIndex = 4;
-            this.labelKol_SEA1.Text = "колличество:";
-            // 
-            // labelKol1_SEA
-            // 
-            this.labelKol1_SEA.AutoSize = true;
-            this.labelKol1_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelKol1_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelKol1_SEA.Location = new System.Drawing.Point(133, 6);
-            this.labelKol1_SEA.Name = "labelKol1_SEA";
-            this.labelKol1_SEA.Size = new System.Drawing.Size(19, 20);
-            this.labelKol1_SEA.TabIndex = 5;
-            this.labelKol1_SEA.Text = "0";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(3, 391);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(313, 110);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = resources.GetString("textBox2.Text");
             // 
             // groupBox1
             // 
@@ -430,6 +455,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(307, 54);
             this.panel2.TabIndex = 4;
+            // 
+            // buttonMinus2_SEA
+            // 
+            this.buttonMinus2_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus2_SEA.Name = "buttonMinus2_SEA";
+            this.buttonMinus2_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus2_SEA.TabIndex = 7;
+            this.buttonMinus2_SEA.Text = "-";
+            this.buttonMinus2_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus2_SEA.Click += new System.EventHandler(this.buttonMinus2_SEA_Click);
             // 
             // labelKol2_SEA
             // 
@@ -534,6 +569,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel3.Size = new System.Drawing.Size(307, 54);
             this.panel3.TabIndex = 4;
             // 
+            // buttonMinus3_SEA
+            // 
+            this.buttonMinus3_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus3_SEA.Name = "buttonMinus3_SEA";
+            this.buttonMinus3_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus3_SEA.TabIndex = 7;
+            this.buttonMinus3_SEA.Text = "-";
+            this.buttonMinus3_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus3_SEA.Click += new System.EventHandler(this.buttonMinus3_SEA_Click);
+            // 
             // labelKol3_SEA
             // 
             this.labelKol3_SEA.AutoSize = true;
@@ -636,6 +681,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(307, 54);
             this.panel4.TabIndex = 4;
+            // 
+            // buttonMinus4_SEA
+            // 
+            this.buttonMinus4_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus4_SEA.Name = "buttonMinus4_SEA";
+            this.buttonMinus4_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus4_SEA.TabIndex = 7;
+            this.buttonMinus4_SEA.Text = "-";
+            this.buttonMinus4_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus4_SEA.Click += new System.EventHandler(this.buttonMinus4_SEA_Click);
             // 
             // labelKol4_SEA
             // 
@@ -740,6 +795,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel5.Size = new System.Drawing.Size(307, 54);
             this.panel5.TabIndex = 4;
             // 
+            // buttonMinus5_SEA
+            // 
+            this.buttonMinus5_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus5_SEA.Name = "buttonMinus5_SEA";
+            this.buttonMinus5_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus5_SEA.TabIndex = 7;
+            this.buttonMinus5_SEA.Text = "-";
+            this.buttonMinus5_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus5_SEA.Click += new System.EventHandler(this.buttonMinus5_SEA_Click);
+            // 
             // labelKol5_SEA
             // 
             this.labelKol5_SEA.AutoSize = true;
@@ -842,6 +907,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(307, 54);
             this.panel6.TabIndex = 4;
+            // 
+            // buttonMinus6_SEA
+            // 
+            this.buttonMinus6_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus6_SEA.Name = "buttonMinus6_SEA";
+            this.buttonMinus6_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus6_SEA.TabIndex = 7;
+            this.buttonMinus6_SEA.Text = "-";
+            this.buttonMinus6_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus6_SEA.Click += new System.EventHandler(this.buttonMinus6_SEA_Click);
             // 
             // labelKol6_SEA
             // 
@@ -946,6 +1021,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel7.Size = new System.Drawing.Size(307, 54);
             this.panel7.TabIndex = 4;
             // 
+            // buttonMinus7_SEA
+            // 
+            this.buttonMinus7_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus7_SEA.Name = "buttonMinus7_SEA";
+            this.buttonMinus7_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus7_SEA.TabIndex = 7;
+            this.buttonMinus7_SEA.Text = "-";
+            this.buttonMinus7_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus7_SEA.Click += new System.EventHandler(this.buttonMinus7_SEA_Click);
+            // 
             // labelKol7_SEA
             // 
             this.labelKol7_SEA.AutoSize = true;
@@ -1048,6 +1133,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(307, 54);
             this.panel8.TabIndex = 4;
+            // 
+            // buttonMinus8_SEA
+            // 
+            this.buttonMinus8_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus8_SEA.Name = "buttonMinus8_SEA";
+            this.buttonMinus8_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus8_SEA.TabIndex = 7;
+            this.buttonMinus8_SEA.Text = "-";
+            this.buttonMinus8_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus8_SEA.Click += new System.EventHandler(this.buttonMinus8_SEA_Click);
             // 
             // labelKol8_SEA
             // 
@@ -1152,6 +1247,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel9.Size = new System.Drawing.Size(307, 54);
             this.panel9.TabIndex = 4;
             // 
+            // buttonMinus9_SEA
+            // 
+            this.buttonMinus9_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus9_SEA.Name = "buttonMinus9_SEA";
+            this.buttonMinus9_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus9_SEA.TabIndex = 7;
+            this.buttonMinus9_SEA.Text = "-";
+            this.buttonMinus9_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus9_SEA.Click += new System.EventHandler(this.buttonMinus9_SEA_Click);
+            // 
             // labelKol9_SEA
             // 
             this.labelKol9_SEA.AutoSize = true;
@@ -1255,6 +1360,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel10.Size = new System.Drawing.Size(307, 54);
             this.panel10.TabIndex = 4;
             // 
+            // buttonMinus10_SEA
+            // 
+            this.buttonMinus10_SEA.Location = new System.Drawing.Point(278, 29);
+            this.buttonMinus10_SEA.Name = "buttonMinus10_SEA";
+            this.buttonMinus10_SEA.Size = new System.Drawing.Size(29, 25);
+            this.buttonMinus10_SEA.TabIndex = 7;
+            this.buttonMinus10_SEA.Text = "-";
+            this.buttonMinus10_SEA.UseVisualStyleBackColor = true;
+            this.buttonMinus10_SEA.Click += new System.EventHandler(this.buttonMinus10_SEA_Click);
+            // 
             // labelKol10_SEA
             // 
             this.labelKol10_SEA.AutoSize = true;
@@ -1319,121 +1434,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
-            // buttonMinus1_SEA
-            // 
-            this.buttonMinus1_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus1_SEA.Name = "buttonMinus1_SEA";
-            this.buttonMinus1_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus1_SEA.TabIndex = 6;
-            this.buttonMinus1_SEA.Text = "-";
-            this.buttonMinus1_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus1_SEA.Click += new System.EventHandler(this.buttonMinus1_SEA_Click);
-            // 
-            // buttonMinus2_SEA
-            // 
-            this.buttonMinus2_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus2_SEA.Name = "buttonMinus2_SEA";
-            this.buttonMinus2_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus2_SEA.TabIndex = 7;
-            this.buttonMinus2_SEA.Text = "-";
-            this.buttonMinus2_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus2_SEA.Click += new System.EventHandler(this.buttonMinus2_SEA_Click);
-            // 
-            // buttonMinus3_SEA
-            // 
-            this.buttonMinus3_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus3_SEA.Name = "buttonMinus3_SEA";
-            this.buttonMinus3_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus3_SEA.TabIndex = 7;
-            this.buttonMinus3_SEA.Text = "-";
-            this.buttonMinus3_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus3_SEA.Click += new System.EventHandler(this.buttonMinus3_SEA_Click);
-            // 
-            // buttonMinus4_SEA
-            // 
-            this.buttonMinus4_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus4_SEA.Name = "buttonMinus4_SEA";
-            this.buttonMinus4_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus4_SEA.TabIndex = 7;
-            this.buttonMinus4_SEA.Text = "-";
-            this.buttonMinus4_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus4_SEA.Click += new System.EventHandler(this.buttonMinus4_SEA_Click);
-            // 
-            // buttonMinus5_SEA
-            // 
-            this.buttonMinus5_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus5_SEA.Name = "buttonMinus5_SEA";
-            this.buttonMinus5_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus5_SEA.TabIndex = 7;
-            this.buttonMinus5_SEA.Text = "-";
-            this.buttonMinus5_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus5_SEA.Click += new System.EventHandler(this.buttonMinus5_SEA_Click);
-            // 
-            // buttonMinus6_SEA
-            // 
-            this.buttonMinus6_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus6_SEA.Name = "buttonMinus6_SEA";
-            this.buttonMinus6_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus6_SEA.TabIndex = 7;
-            this.buttonMinus6_SEA.Text = "-";
-            this.buttonMinus6_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus6_SEA.Click += new System.EventHandler(this.buttonMinus6_SEA_Click);
-            // 
-            // buttonMinus7_SEA
-            // 
-            this.buttonMinus7_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus7_SEA.Name = "buttonMinus7_SEA";
-            this.buttonMinus7_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus7_SEA.TabIndex = 7;
-            this.buttonMinus7_SEA.Text = "-";
-            this.buttonMinus7_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus7_SEA.Click += new System.EventHandler(this.buttonMinus7_SEA_Click);
-            // 
-            // buttonMinus8_SEA
-            // 
-            this.buttonMinus8_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus8_SEA.Name = "buttonMinus8_SEA";
-            this.buttonMinus8_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus8_SEA.TabIndex = 7;
-            this.buttonMinus8_SEA.Text = "-";
-            this.buttonMinus8_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus8_SEA.Click += new System.EventHandler(this.buttonMinus8_SEA_Click);
-            // 
-            // buttonMinus9_SEA
-            // 
-            this.buttonMinus9_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus9_SEA.Name = "buttonMinus9_SEA";
-            this.buttonMinus9_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus9_SEA.TabIndex = 7;
-            this.buttonMinus9_SEA.Text = "-";
-            this.buttonMinus9_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus9_SEA.Click += new System.EventHandler(this.buttonMinus9_SEA_Click);
-            // 
-            // buttonMinus10_SEA
-            // 
-            this.buttonMinus10_SEA.Location = new System.Drawing.Point(278, 29);
-            this.buttonMinus10_SEA.Name = "buttonMinus10_SEA";
-            this.buttonMinus10_SEA.Size = new System.Drawing.Size(29, 25);
-            this.buttonMinus10_SEA.TabIndex = 7;
-            this.buttonMinus10_SEA.Text = "-";
-            this.buttonMinus10_SEA.UseVisualStyleBackColor = true;
-            this.buttonMinus10_SEA.Click += new System.EventHandler(this.buttonMinus10_SEA_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(7, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(662, 75);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Каталог";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // FormCatalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1447,14 +1447,14 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.Text = "FormCatalog";
             this.panelCap_SEA.ResumeLayout(false);
             this.tableLayoutPanelCap_SEA.ResumeLayout(false);
-            this.flowLayoutPanelCatalog_SEA.ResumeLayout(false);
             this.groupBoxButton_SEA.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.flowLayoutPanelCatalog_SEA.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelButton1.ResumeLayout(false);
             this.panelButton1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);

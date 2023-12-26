@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib;
+
 
 
 
@@ -33,21 +35,13 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
             try
             {
-                // проверка наличия файла
-                if (File.Exists(filePath))
-                {
                     DataTable dataTable = ReadCsvFile(filePath);
 
                     dataGridViewBsket_SEA.DataSource = dataTable;
 
                     // изменение ширины столбцов
                     dataGridViewBsket_SEA.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-
-                }
-                else
-                {
-                    MessageBox.Show("Файл не найден.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                
             }
             catch (Exception ex)
             {
@@ -123,10 +117,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
         private void buttonArrange_SEA_Click(object sender, EventArgs e)
         {
-            // Определение пути к файлу, в который будут сохранены данные
             string filePath = $@"{Directory.GetCurrentDirectory()}\Basket.csv";
 
-            // Используйте try-catch для обработки исключений при записи в файл
             try
             {
                 if (dataGridViewBsket_SEA.Rows.Count > 0)
@@ -147,7 +139,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                         {
                             for (int i = 0; i < dataGridViewBsket_SEA.Columns.Count; i++)
                             {
-                                writer.Write(row.Cells[i].Value);
+                                string cellValue = row.Cells[i].Value?.ToString() ?? string.Empty;
+                                writer.Write(cellValue);
                                 if (i < dataGridViewBsket_SEA.Columns.Count - 1)
                                     writer.Write(",");
                             }
@@ -168,7 +161,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
 
 
-
         private void buttonChange_SEA_Click(object sender, EventArgs e)
         {
 
@@ -182,7 +174,29 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                     {
                         int columnIndex = 2;
 
+                        // Установка нового значения в ячейку (2 столбец, строка под номером из textBoxNumber_SEA)
                         dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[columnIndex].Value = newQuantity;
+
+                        int columnIndex3 = 3;
+                        // Вычисление и установка нового значения в ячейку (3 столбец, строка под номером из textBoxNumber_SEA)
+                        double value2 = Convert.ToDouble(dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[2].Value);
+                        double value3 = Convert.ToDouble(dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[3].Value);
+                        dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[columnIndex3].Value = value2 * value3;
+
+                        // Сложение всех значений из столбца 3, кроме первой и последней строки
+                        double sum = 0;
+                        int columnIndexSum = 3;
+                        for (int i = 0; i < dataGridViewBsket_SEA.Rows.Count; i++)
+                        {
+                            if (i != 0 && i != dataGridViewBsket_SEA.Rows.Count - 1)
+                            {
+                                sum += Convert.ToDouble(dataGridViewBsket_SEA.Rows[i].Cells[columnIndexSum].Value);
+                            }
+                        }
+
+                        // Запись результата в ячейку (последняя строка, последний столбец)
+                        int lastRowIndex = dataGridViewBsket_SEA.Rows.Count - 1;
+                        dataGridViewBsket_SEA.Rows[lastRowIndex].Cells[columnIndexSum].Value = sum;
 
                         textBoxNumber_SEA.Text = "";
                         textBoxQuantity_SEA.Text = "";
@@ -201,13 +215,17 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             {
                 MessageBox.Show("Нет данных для изменения.", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
 
-            
-            
+
+
+
         }
-       
 
+        private void buttonSortPrice_SEA_Click(object sender, EventArgs e)
+        {
+            
+
+        }
     }
 }
 

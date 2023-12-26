@@ -76,9 +76,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             // Используйте try-catch для обработки исключений при записи в файл
             try
             {
-                using (StreamWriter writer = new StreamWriter(filePath))
+                using (StreamWriter writer = new StreamWriter(filePath, false))
                 {
-                    // Запись заголовков (названия столбцов) в CSV
                     writer.WriteLine("Название,Цена,Количество,Итог");
 
                     // Запись данных из ячеек в CSV
@@ -96,7 +95,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
                         writer.WriteLine($"{name},{price},{quantity},{totalPrice}");
                     }
-
                 }
             }
             catch (Exception ex)

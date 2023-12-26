@@ -39,10 +39,9 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         private void buttonShow_SEA_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            var randomBetween10And20 = rnd.Next(1000,9999);
+            var randomBetween10And20 = rnd.Next(1000, 9999);
             labelNumber0_SEA.Text = rnd.Next().ToString();
             labelData0_SEA.Text = "4 рабочих дня";
-
 
             string filePath = $@"{Directory.GetCurrentDirectory()}\Basket.csv";
 
@@ -58,6 +57,14 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                     // изменение ширины столбцов
                     dataGridViewBsket_SEA.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 
+                    // Получение значения из последней ячейки и обновление labelQ0_SEA
+                    if (dataGridViewBsket_SEA.Rows.Count > 0)
+                    {
+                        int x = dataGridViewBsket_SEA.Rows.Count - 2;
+                        int y = dataGridViewBsket_SEA.Columns.Count - 1;
+                        object r = dataGridViewBsket_SEA.Rows[x].Cells[y].Value;
+                        labelQ0_SEA.Text = r.ToString();
+                    }
                 }
                 else
                 {
@@ -68,7 +75,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             {
                 MessageBox.Show($"Произошла ошибка при чтении файла: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
         }
 
         private DataTable ReadCsvFile(string filePath)
@@ -101,7 +107,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
             return dataTable;
 
-            
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -127,8 +133,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             string tel = textBoxTel_SEA.Text;
 
             // Составление строки данных в формате CSV с заголовками
-            string csvData = "Номер заказа;Дата исполнения;Стоимость заказа;Фамилия;Имя;Отчество;Номер счета;Адрес;Номер телефона\n";
-            csvData += $"{number};{data};{q};{surname};{name};{patronym};{num};{address};{tel}\n";
+            string csvData = "Номер заказа:,Дата исполнения:,Стоимость заказа:,Фамилия:,Имя:,Отчество:,Номер счета:,Адрес:,Номер телефона:\n";
+            csvData += $"{number},{data},{q},{surname},{name},{patronym},{num},{address},{tel}\n\n";
 
             string outputFilePath = $@"{Directory.GetCurrentDirectory()}\OutputFile.csv";
 
@@ -136,22 +142,21 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
             try
             {
+                File.WriteAllText(outputFilePath, string.Empty);
                 File.AppendAllText(outputFilePath, csvData);
 
                 if (File.Exists(inputFilePath))
                 {
-                    string basketData = File.ReadAllText(inputFilePath);
-                    File.AppendAllText(outputFilePath, basketData);
+                    string basketData = File.ReadAllText(inputFilePath, Encoding.GetEncoding(1251));
+                    File.AppendAllText(outputFilePath, basketData, Encoding.GetEncoding(1251));
                 }
 
-                MessageBox.Show("Данные успешно добавлены в файл.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(@"Файл успешно сохранен в C:\Tyuiu.ShadrinEA.Sprint7\Tyuiu.ShadrinEA.Sprint7.Project.V10\bin\Debug\OutputFile.csv ", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Произошла ошибка при добавлении данных: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            
         }
     }
 }

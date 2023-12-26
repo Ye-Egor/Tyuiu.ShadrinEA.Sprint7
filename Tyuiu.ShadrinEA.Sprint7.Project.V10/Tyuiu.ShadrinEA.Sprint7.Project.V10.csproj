@@ -106,5 +106,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib\Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib.csproj">
+      <Project>{f21fc50f-8213-4963-848b-3afc3ec04db7}</Project>
+      <Name>Tyuiu.ShadrinEA.Sprint7.Project.V10.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

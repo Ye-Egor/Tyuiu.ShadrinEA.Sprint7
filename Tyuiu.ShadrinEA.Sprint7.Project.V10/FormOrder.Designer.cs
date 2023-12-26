@@ -30,6 +30,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
         private void InitializeComponent()
         {
             this.panelButton_SEA = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonClose_SEA = new System.Windows.Forms.Button();
             this.buttonBack_SEA = new System.Windows.Forms.Button();
@@ -47,17 +48,16 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelTel_SEA = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonShow_SEA = new System.Windows.Forms.Button();
+            this.labelNumber0_SEA = new System.Windows.Forms.Label();
+            this.labelData0_SEA = new System.Windows.Forms.Label();
+            this.labelQ0_SEA = new System.Windows.Forms.Label();
             this.labelNumber_SEA = new System.Windows.Forms.Label();
             this.labelData_SEA = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridViewBsket_SEA = new System.Windows.Forms.DataGridView();
-            this.buttonShowFile_SEA = new System.Windows.Forms.Button();
-            this.labelData0_SEA = new System.Windows.Forms.Label();
-            this.labelNumber0_SEA = new System.Windows.Forms.Label();
-            this.buttonShow_SEA = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.labelQ_SEA = new System.Windows.Forms.Label();
-            this.labelQ0_SEA = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonShowFile_SEA = new System.Windows.Forms.Button();
+            this.dataGridViewBsket_SEA = new System.Windows.Forms.DataGridView();
             this.panelButton_SEA.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,6 +76,21 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panelButton_SEA.Name = "panelButton_SEA";
             this.panelButton_SEA.Size = new System.Drawing.Size(1015, 62);
             this.panelButton_SEA.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.PaleGreen;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(918, 62);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Оформление заказа";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -263,6 +278,53 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // buttonShow_SEA
+            // 
+            this.buttonShow_SEA.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.buttonShow_SEA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonShow_SEA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonShow_SEA.Location = new System.Drawing.Point(361, 16);
+            this.buttonShow_SEA.Name = "buttonShow_SEA";
+            this.buttonShow_SEA.Size = new System.Drawing.Size(88, 78);
+            this.buttonShow_SEA.TabIndex = 10;
+            this.buttonShow_SEA.Text = "Показать";
+            this.buttonShow_SEA.UseVisualStyleBackColor = false;
+            this.buttonShow_SEA.Click += new System.EventHandler(this.buttonShow_SEA_Click);
+            // 
+            // labelNumber0_SEA
+            // 
+            this.labelNumber0_SEA.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.labelNumber0_SEA.AutoSize = true;
+            this.labelNumber0_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNumber0_SEA.ForeColor = System.Drawing.Color.White;
+            this.labelNumber0_SEA.Location = new System.Drawing.Point(181, 16);
+            this.labelNumber0_SEA.Name = "labelNumber0_SEA";
+            this.labelNumber0_SEA.Size = new System.Drawing.Size(14, 20);
+            this.labelNumber0_SEA.TabIndex = 9;
+            this.labelNumber0_SEA.Text = " ";
+            // 
+            // labelData0_SEA
+            // 
+            this.labelData0_SEA.AutoSize = true;
+            this.labelData0_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelData0_SEA.ForeColor = System.Drawing.Color.White;
+            this.labelData0_SEA.Location = new System.Drawing.Point(181, 42);
+            this.labelData0_SEA.Name = "labelData0_SEA";
+            this.labelData0_SEA.Size = new System.Drawing.Size(14, 20);
+            this.labelData0_SEA.TabIndex = 8;
+            this.labelData0_SEA.Text = " ";
+            // 
+            // labelQ0_SEA
+            // 
+            this.labelQ0_SEA.AutoSize = true;
+            this.labelQ0_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelQ0_SEA.ForeColor = System.Drawing.Color.White;
+            this.labelQ0_SEA.Location = new System.Drawing.Point(181, 66);
+            this.labelQ0_SEA.Name = "labelQ0_SEA";
+            this.labelQ0_SEA.Size = new System.Drawing.Size(14, 20);
+            this.labelQ0_SEA.TabIndex = 7;
+            this.labelQ0_SEA.Text = " ";
+            // 
             // labelNumber_SEA
             // 
             this.labelNumber_SEA.AutoSize = true;
@@ -281,9 +343,20 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.labelData_SEA.ForeColor = System.Drawing.Color.White;
             this.labelData_SEA.Location = new System.Drawing.Point(6, 42);
             this.labelData_SEA.Name = "labelData_SEA";
-            this.labelData_SEA.Size = new System.Drawing.Size(162, 20);
+            this.labelData_SEA.Size = new System.Drawing.Size(160, 20);
             this.labelData_SEA.TabIndex = 5;
-            this.labelData_SEA.Text = "Дата исполнения:";
+            this.labelData_SEA.Text = "Срок исполнения:";
+            // 
+            // labelQ_SEA
+            // 
+            this.labelQ_SEA.AutoSize = true;
+            this.labelQ_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelQ_SEA.ForeColor = System.Drawing.Color.White;
+            this.labelQ_SEA.Location = new System.Drawing.Point(6, 66);
+            this.labelQ_SEA.Name = "labelQ_SEA";
+            this.labelQ_SEA.Size = new System.Drawing.Size(169, 20);
+            this.labelQ_SEA.TabIndex = 6;
+            this.labelQ_SEA.Text = "Стоимость заказа:";
             // 
             // panel2
             // 
@@ -295,15 +368,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(468, 388);
             this.panel2.TabIndex = 18;
-            // 
-            // dataGridViewBsket_SEA
-            // 
-            this.dataGridViewBsket_SEA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBsket_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewBsket_SEA.Location = new System.Drawing.Point(0, 62);
-            this.dataGridViewBsket_SEA.Name = "dataGridViewBsket_SEA";
-            this.dataGridViewBsket_SEA.Size = new System.Drawing.Size(547, 388);
-            this.dataGridViewBsket_SEA.TabIndex = 19;
             // 
             // buttonShowFile_SEA
             // 
@@ -318,78 +382,14 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             this.buttonShowFile_SEA.UseVisualStyleBackColor = false;
             this.buttonShowFile_SEA.Click += new System.EventHandler(this.buttonShowFile_SEA_Click);
             // 
-            // labelData0_SEA
+            // dataGridViewBsket_SEA
             // 
-            this.labelData0_SEA.AutoSize = true;
-            this.labelData0_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelData0_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelData0_SEA.Location = new System.Drawing.Point(181, 42);
-            this.labelData0_SEA.Name = "labelData0_SEA";
-            this.labelData0_SEA.Size = new System.Drawing.Size(14, 20);
-            this.labelData0_SEA.TabIndex = 8;
-            this.labelData0_SEA.Text = " ";
-            // 
-            // labelNumber0_SEA
-            // 
-            this.labelNumber0_SEA.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.labelNumber0_SEA.AutoSize = true;
-            this.labelNumber0_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNumber0_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelNumber0_SEA.Location = new System.Drawing.Point(181, 16);
-            this.labelNumber0_SEA.Name = "labelNumber0_SEA";
-            this.labelNumber0_SEA.Size = new System.Drawing.Size(14, 20);
-            this.labelNumber0_SEA.TabIndex = 9;
-            this.labelNumber0_SEA.Text = " ";
-            // 
-            // buttonShow_SEA
-            // 
-            this.buttonShow_SEA.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.buttonShow_SEA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonShow_SEA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonShow_SEA.Location = new System.Drawing.Point(361, 16);
-            this.buttonShow_SEA.Name = "buttonShow_SEA";
-            this.buttonShow_SEA.Size = new System.Drawing.Size(88, 78);
-            this.buttonShow_SEA.TabIndex = 10;
-            this.buttonShow_SEA.Text = "Показать";
-            this.buttonShow_SEA.UseVisualStyleBackColor = false;
-            this.buttonShow_SEA.Click += new System.EventHandler(this.buttonShow_SEA_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(918, 62);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Оформление заказа";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // labelQ_SEA
-            // 
-            this.labelQ_SEA.AutoSize = true;
-            this.labelQ_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQ_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelQ_SEA.Location = new System.Drawing.Point(6, 66);
-            this.labelQ_SEA.Name = "labelQ_SEA";
-            this.labelQ_SEA.Size = new System.Drawing.Size(169, 20);
-            this.labelQ_SEA.TabIndex = 6;
-            this.labelQ_SEA.Text = "Стоимость заказа:";
-            // 
-            // labelQ0_SEA
-            // 
-            this.labelQ0_SEA.AutoSize = true;
-            this.labelQ0_SEA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQ0_SEA.ForeColor = System.Drawing.Color.White;
-            this.labelQ0_SEA.Location = new System.Drawing.Point(181, 66);
-            this.labelQ0_SEA.Name = "labelQ0_SEA";
-            this.labelQ0_SEA.Size = new System.Drawing.Size(14, 20);
-            this.labelQ0_SEA.TabIndex = 7;
-            this.labelQ0_SEA.Text = " ";
+            this.dataGridViewBsket_SEA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBsket_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewBsket_SEA.Location = new System.Drawing.Point(0, 62);
+            this.dataGridViewBsket_SEA.Name = "dataGridViewBsket_SEA";
+            this.dataGridViewBsket_SEA.Size = new System.Drawing.Size(547, 388);
+            this.dataGridViewBsket_SEA.TabIndex = 19;
             // 
             // FormOrder
             // 
