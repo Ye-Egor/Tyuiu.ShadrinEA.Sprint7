@@ -47,7 +47,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             {
                 MessageBox.Show($"Произошла ошибка при чтении файла: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            // проверка наличия данных
+
             if (dataGridViewBsket_SEA.Rows.Count > 0)
             {
                 int lastColumnIndex = dataGridViewBsket_SEA.Columns.Count - 1;
@@ -59,7 +59,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                     sum += Convert.ToDouble(row.Cells[lastColumnIndex].Value);
                 }
 
-                // вывод суммы
+                // вывод
                 dataGridViewBsket_SEA.Rows[dataGridViewBsket_SEA.Rows.Count - 1].Cells[lastColumnIndex].Value = sum;
             }
             else
@@ -166,24 +166,22 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
             if (dataGridViewBsket_SEA.Rows.Count > 0)
             {
-                // Проверка корректности
                 if (int.TryParse(textBoxNumber_SEA.Text, out int rowIndex) && rowIndex > 0 && rowIndex <= dataGridViewBsket_SEA.Rows.Count)
                 {
-                    // Проверка корректности
                     if (double.TryParse(textBoxQuantity_SEA.Text, out double newQuantity))
                     {
                         int columnIndex = 2;
 
-                        // Установка нового значения в ячейку (2 столбец, строка под номером из textBoxNumber_SEA)
+                        // Установка нового значения в ячейку
                         dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[columnIndex].Value = newQuantity;
 
                         int columnIndex3 = 3;
-                        // Вычисление и установка нового значения в ячейку (3 столбец, строка под номером из textBoxNumber_SEA)
+                        // Вычисление и установка нового значения
                         double value2 = Convert.ToDouble(dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[2].Value);
                         double value3 = Convert.ToDouble(dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[3].Value);
                         dataGridViewBsket_SEA.Rows[rowIndex - 1].Cells[columnIndex3].Value = value2 * value3;
 
-                        // Сложение всех значений из столбца 3, кроме первой и последней строки
+                        // Сложение всех значений из столбца 3
                         double sum = 0;
                         int columnIndexSum = 3;
                         for (int i = 0; i < dataGridViewBsket_SEA.Rows.Count; i++)
@@ -194,7 +192,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                             }
                         }
 
-                        // Запись результата в ячейку (последняя строка, последний столбец)
+                        // Запись результата в ячейку
                         int lastRowIndex = dataGridViewBsket_SEA.Rows.Count - 1;
                         dataGridViewBsket_SEA.Rows[lastRowIndex].Cells[columnIndexSum].Value = sum;
 

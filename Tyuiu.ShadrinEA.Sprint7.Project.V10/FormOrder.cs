@@ -47,7 +47,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
             try
             {
-                // проверка наличия файла
                 if (File.Exists(filePath))
                 {
                     DataTable dataTable = ReadCsvFile(filePath);
@@ -57,7 +56,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                     // изменение ширины столбцов
                     dataGridViewBsket_SEA.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 
-                    // Получение значения из последней ячейки и обновление labelQ0_SEA
                     if (dataGridViewBsket_SEA.Rows.Count > 0)
                     {
                         int x = dataGridViewBsket_SEA.Rows.Count - 2;
@@ -132,7 +130,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
             string address = textBoxAddress_SEA.Text;
             string tel = textBoxTel_SEA.Text;
 
-            // Составление строки данных в формате CSV с заголовками
             string csvData = "Номер заказа:,Дата исполнения:,Стоимость заказа:,Фамилия:,Имя:,Отчество:,Номер счета:,Адрес:,Номер телефона:\n";
             csvData += $"{number},{data},{q},{surname},{name},{patronym},{num},{address},{tel}\n\n";
 

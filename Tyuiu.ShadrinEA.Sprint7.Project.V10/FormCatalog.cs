@@ -70,10 +70,8 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
         private void buttonBasket_SEA_Click(object sender, EventArgs e)
         {
-            // Определение пути к файлу CSV
             string filePath = $@"{Directory.GetCurrentDirectory()}\Basket.csv";
 
-            // Используйте try-catch для обработки исключений при записи в файл
             try
             {
                 using (StreamWriter writer = new StreamWriter(filePath, false))
@@ -90,7 +88,6 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
                         if (Convert.ToInt32(quantity) == 0)
                             continue;
 
-                        // Вычисление итога
                         decimal totalPrice = Convert.ToDecimal(price) * Convert.ToInt32(quantity);
 
                         writer.WriteLine($"{name},{price},{quantity},{totalPrice}");
@@ -104,11 +101,7 @@ namespace Tyuiu.ShadrinEA.Sprint7.Project.V10
 
 
             FormBasket newForm = new FormBasket();
-
-            // Показываем новую форму
             newForm.Show();
-
-            // Скрываем текущую форму
             this.Hide();
         }
 
